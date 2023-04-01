@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&family=Rubik+Mono+One&display=swap');
+
+body {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**
+*! Navbar styles here
+**/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+.navbar-middle-elements {
+    display: flex;
+    gap: 50px;
+}
+
+
+.navbar * a {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+.bag-icon {
+    color: wheat;
+    font-size: 25px; 
+}
+
+
+
+/**
+*! Starpage styles here
+**/
+
+.startpage-welcome-div {
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(209, 202, 207, 0.73)),
+    url(/src/assets/sneakers-welcome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.startpage-welcome-div > a {
+    background-color: rgb(245, 232, 232);
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 50px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.cloud-text {
+    font-family: 'Rubik Mono One', sans-serif;
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;	
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg);
+	background-size: auto;
+	background-attachment: unset;
+	background-position: 0%;
+	width: 80%;
+	font-size: 100px;
+	animation: clouds-moving infinite 220s;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
+	animation-timing-function: linear;
+	text-align: center;
+}
+
+
+@keyframes clouds-moving {
+	0% {
+		background-position: 0%;	
+	}
+	50% {
+		background-position: 100%;	
+	}
+	100% {
+		background-position: 0%;
+	}
+}
+
