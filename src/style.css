@@ -124,7 +124,7 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -139,9 +139,9 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     padding: 30px 80px;
-    border-radius: 5px;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-bottom: 100px;
+  
 }
 
 .sales-notice-card > a {
@@ -151,3 +151,33 @@ a {
     font-size: 30px;
 }
 
+/**
+*! Gender Selection Startpage styles hre
+**/
+
+.startpage-gender-shop-selection-div {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+}
+
+.startpage-gender-shop-selection-div * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.men-startpage-background {
+    background: url(/src/assets/skateboard.jpg);
+    background-size: cover;
+   
+}
+
+.women-startpage-background {
+    background: url(/src/assets/women-beach.jpg);
+    background-size: cover;
+}
