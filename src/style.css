@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&family=Rubik+Mono+One&display=swap');
 
-body {
-    box-sizing: border-box;
-}
 
 * {
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -25,6 +23,8 @@ a {
     padding: 30px 50px;
     background-color: black;
     color: whitesmoke;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -37,12 +37,14 @@ a {
 .navbar * a {
     color: whitesmoke;
     font-weight: bold;
+  
 }
 
 
 .bag-icon {
     color: wheat;
     font-size: 25px; 
+   
 }
 
 
@@ -156,7 +158,7 @@ a {
 **/
 
 .startpage-gender-shop-selection-div {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     text-align: center;
 }
@@ -181,3 +183,81 @@ a {
     background: url(/src/assets/women-beach.jpg);
     background-size: cover;
 }
+
+/**
+*! Footer styles here
+**/
+
+.footer {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url(/src/assets/background-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 25px solid rgb(242, 181, 181);
+    color: white;
+   
+}
+
+.footer-first-line {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: start;
+    width: 100%;
+    font-size: 25px;
+}
+
+.footer * h2 {
+    font-size: 40px;
+}
+
+.footer * input {
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.contact-form > textarea {
+    width: 100%;
+    min-height: 120px;
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin-top: 10px;
+}
+.contact-form > button {
+    width: 66%;
+    font-size: 25px;
+  
+ }
+
+ .contact-inputs {
+    display: flex;
+    gap: 12px;
+ }
+
+ .input-email {
+    width: 100%;
+ }
+
+.newsletter-footer > h2 {
+    margin-bottom: 20px;
+}
+.contact-footer > h2 {
+    margin-bottom: 20px;
+}
+.adress-footer > h2 {
+    margin-bottom: 20px;
+}
+
+ .newsletter-btn {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+ }
