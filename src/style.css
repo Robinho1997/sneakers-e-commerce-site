@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&family=Rubik+Mono+One&display=swap');
 
 
+
 * {
     margin: 0;
     padding: 0; 
@@ -25,6 +26,7 @@ a {
     color: whitesmoke;
     position: fixed;
     width: 100%;
+    
 }
 
 
@@ -189,28 +191,33 @@ a {
 **/
 
 .footer {
-    height: 80vh;
+    padding: 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background: url(/src/assets/background-footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 25px solid rgb(242, 181, 181);
     color: white;
+
    
+  width: 100%;
 }
 
 .footer-first-line {
     display: flex;
     justify-content: center;
+  
     gap: 150px;
     align-items: start;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .footer * h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .footer * input {
@@ -261,3 +268,53 @@ a {
     font-size: 20px;
     margin-top: 15px;
  }
+
+ .footer-second-line {
+    font-size: 20px;
+    margin-top: 100px;
+  
+    bottom: 20px;
+    text-align: center;
+ }
+
+ .footer-links {
+    display: flex;
+    gap: 50px;
+    color: white;
+    margin-bottom: 15px;
+ }
+
+ .footer-links * {
+    color: white;
+ }
+
+
+
+ /**
+ *! Cookies / Impressum / Datenschutz Page Styles here
+ **/
+
+ .cookies {
+   padding: 120px 150px;
+  
+ }
+
+.cookies > h2 {
+    margin-block: 20px;
+}
+ 
+
+.impressum {
+    padding: 160px 150px;
+    text-align: center;
+    background: url(/src/assets/angebote-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.datenschutz {
+    padding: 120px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

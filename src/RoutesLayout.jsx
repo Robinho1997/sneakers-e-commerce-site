@@ -7,6 +7,9 @@ import About from './pages/About'
 import Support from './pages/Support'
 import Cart from './pages/Cart'
 import Layout from "./Layout"
+import Cookies from "./pages/Cookies"
+import Impressum from "./pages/Impressum"
+import Datenschutz from "./pages/Datenschutz"
 
 function RoutesLayout() {
 
@@ -19,6 +22,9 @@ function RoutesLayout() {
                 <Route path='/über' element={<About />} />
                 <Route path='/kundendienst' element={<Support />} />
                 <Route path='/einkaufswagen' element={<Cart />} />
+                <Route path='/cookies' element={<Cookies />} />
+                <Route path='/impressum' element={<Impressum />} />
+                <Route path='/datenschutz' element={<Datenschutz />} />
             </Routes>
         </Layout>
     )

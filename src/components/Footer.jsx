@@ -1,11 +1,12 @@
 import React from "react";
-// Cooles hintergrundbild
-// ungefäht 50vh
-// flex erstellen damit horiziontal
-// 1. Adresse 2. Kontaktieren 3. Newsletter
+import { Link } from "react-router-dom";
+
+
+
 function Footer() {
     return (
         <div className="footer">
+          
             <div className="footer-first-line">
                 <div className="adress-footer">
                     <h2>Adresse</h2>
@@ -33,8 +34,18 @@ function Footer() {
                     <button className="newsletter-btn">Jetzt abbonieren</button>
                 </div>
             </div>
+
+            <div className="footer-second-line">
+                <div className="footer-links">
+                    <Link to={"/cookies"}>Cookies</Link>
+                    <Link to={"/impressum"}>Impressum</Link>
+                    <Link to={"/datenschutz"}>Datenschutz</Link>
+                </div>
+                <p>© 2035 AWESOME SNEAKERS.</p>
+            </div>
         </div>
     )
 }
-
+// drei Links , Cookies, Impressum & Datenschutz
+// dadrunter © 2035 AWESOME SNEAKERS.
 export default Footer

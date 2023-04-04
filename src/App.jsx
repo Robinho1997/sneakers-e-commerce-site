@@ -4,9 +4,7 @@ import RoutesLayout from './RoutesLayout'
 
 function App(props) {
   return (
-    <div className="App">
       <RoutesLayout/>
-    </div>
   )
 }
 

@@ -3,7 +3,7 @@ import Footer from './components/Footer'
 
 function Layout(props) {
     return (
-      <div className="App">
+      <div>
         <Navbar/>
           <div>{props.children}</div>
         <Footer/>
