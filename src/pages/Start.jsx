@@ -25,7 +25,7 @@ function Start() {
             <div className="startpage-welcome-div">
                 <h1 className="cloud-text cloud-title">Awesome</h1>
                 <h1 className="cloud-text cloud-title">Sneakers</h1>
-                <Link to="/pages/shop">SHOP NOW</Link>
+                <Link to="/herren">SHOP NOW</Link>
             </div>
            
            <div className="startpage-gender-shop-selection-div">
