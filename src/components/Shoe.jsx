@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css"
 
 function Shoe(props) {
     const { addToCart } = useContext(Context)
-   
+
     const settings = {
         dots: true,
         infinite: true,
@@ -31,8 +31,16 @@ function Shoe(props) {
                 </div>
             </Slider>
             <Link>{props.name}</Link>
-            <p>{props.price}€</p>
+
+            {props.oldPrice ?
+                <p>
+                    <span className="old-price">{props.oldPrice} €</span> 
+                    <span className="discount-price">{props.price} €</span>
+                </p>
+                : <p>{props.price} €</p>}
+
             <button onClick={() => addToCart(props.fullObj)}>In den Warenkorb</button>
+
         </div>
     )
 }

@@ -42,7 +42,7 @@ function Start() {
                     className="changing-background-container">
                     <div className="sales-notice-card">
                         <h1>Spare 40%-60%</h1>
-                        <Link to="/pages/shop">ANGEBOTE</Link>
+                        <Link to="/angebote">ANGEBOTE</Link>
                     </div>
                 </div>
             </div>

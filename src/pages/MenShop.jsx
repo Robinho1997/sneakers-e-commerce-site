@@ -2,12 +2,11 @@ import React from "react";
 import Shoe from "../components/Shoe";
 import sneakerData from "../data/sneakerData";
 import { nanoid } from 'nanoid'
-// if sneaker.gender === "male"
-// return Shoe Component
+
 function MenShop() {
     const MaleShoeElements = sneakerData.map(sneaker => {
         if(sneaker.gender === "male") {
-            return <Shoe key={nanoid()} fullObj={sneaker} images={[sneaker.img,sneaker.img2,sneaker.img3]} name={sneaker.name} price={sneaker.price}/>
+            return <Shoe key={nanoid()} fullObj={sneaker} images={[sneaker.img,sneaker.img2,sneaker.img3]} name={sneaker.name} price={sneaker.price} oldPrice={sneaker.oldPrice}/>
         }
         
     })

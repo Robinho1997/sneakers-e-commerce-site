@@ -7,7 +7,7 @@ import { nanoid } from 'nanoid'
 function WomenShop() {
     const FemaleShoeElements = sneakerData.map(sneaker => {
         if(sneaker.gender === "female") {
-            return <Shoe key={nanoid()} fullObj={sneaker} images={[sneaker.img,sneaker.img2,sneaker.img3]} name={sneaker.name} price={sneaker.price}/>
+            return <Shoe key={nanoid()} fullObj={sneaker} images={[sneaker.img,sneaker.img2,sneaker.img3]} name={sneaker.name} price={sneaker.price} oldPrice={sneaker.oldPrice}/>
         }
         
     })
