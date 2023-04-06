@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;700&family=Rubik+Mono+One&display=swap');
 
-
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(238, 225, 234);
+}
 
 * {
     margin: 0;
@@ -12,6 +18,7 @@
 a {
     text-decoration: none;
 }
+
 
 /**
 *! Navbar styles here
@@ -26,19 +33,38 @@ a {
     color: whitesmoke;
     position: fixed;
     width: 100%;
+    border-bottom: 1px solid white;
 }
 
 
 .navbar-middle-elements {
     display: flex;
     gap: 50px;
+    position: relative;
+    font-weight: bold;
+}
+
+.gender-navbar-box {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  z-index: 1;
+  background-color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gender-navbar-box a{
+    display: block;
+    margin-bottom: 5px;
+   
 }
 
 
-.navbar * a {
-    color: whitesmoke;
-    font-weight: bold;
 
+.navbar a {
+    color: whitesmoke;
 }
 
 .navbar * p {
@@ -65,7 +91,7 @@ a {
 
 .startpage-welcome-div {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(209, 202, 207, 0.73)),
-        url(/src/assets/sneakers-welcome.jpg);
+    url(/src/assets/sneakers-welcome.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 95vh;
@@ -126,11 +152,9 @@ a {
 **/
 
 .startpage-sales-div {
-    background-image: url(/src/assets/angebote-background.jpg);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-
-
 }
 
 .changing-background-container {
@@ -173,6 +197,8 @@ a {
     height: 60vh;
     display: flex;
     text-align: center;
+    border-block: 3px solid white;
+  
 }
 
 .startpage-gender-shop-selection-div * {
@@ -188,6 +214,7 @@ a {
 .men-startpage-background {
     background: url(/src/assets/skateboard.jpg);
     background-size: cover;
+    border-right: 3px solid white;
 
 }
 
@@ -201,33 +228,24 @@ a {
 **/
 
 .footer {
+    border-top: 3px solid white;
     padding: 20px;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: url(/src/assets/background-footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 25px solid rgb(242, 181, 181);
+    justify-content: space-around;
+    background-color: black;
     color: white;
-
-
     width: 100%;
 }
 
-.footer-first-line {
-    display: flex;
-    justify-content: center;
 
-    gap: 150px;
-    align-items: start;
-    width: 100%;
+.footer-second-line {
     font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
 }
-
 .footer * h2 {
-    font-size: 30px;
+    font-size:25px;
 }
 
 .footer * input {
@@ -238,57 +256,29 @@ a {
     padding: 5px;
 }
 
-.contact-form>textarea {
-    width: 100%;
-    min-height: 120px;
-    font-size: 20px;
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 5px;
-    margin-top: 10px;
-}
-
-.contact-form>button {
-    width: 66%;
-    font-size: 25px;
-
-}
-
-.contact-inputs {
-    display: flex;
-    gap: 12px;
-}
-
 .input-email {
+    margin-top: 5px;
     width: 100%;
 }
 
 .newsletter-footer>h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.contact-footer>h2 {
-    margin-bottom: 20px;
-}
+
 
 .adress-footer>h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .newsletter-btn {
     width: 100%;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-.footer-second-line {
-    font-size: 20px;
-    margin-top: 100px;
 
-    bottom: 20px;
-    text-align: center;
-}
 
 .footer-links {
     display: flex;
@@ -309,7 +299,7 @@ a {
 
 .cookies {
     padding: 120px 150px;
-
+    background-color: rgb(238, 225, 234);
 }
 
 .cookies>h2 {
@@ -320,9 +310,8 @@ a {
 .impressum {
     padding: 160px 150px;
     text-align: center;
-    background: url(/src/assets/angebote-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    background-color: rgb(238, 225, 234);
 }
 
 .datenschutz {
@@ -330,6 +319,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: rgb(238, 225, 234);
 }
 
 
@@ -337,17 +327,15 @@ a {
 *! Shoe Styles here
 **/
 
-.men-shoes-div {
-
+.shoes-div {
     padding-top: 150px;
     background-color: rgb(238, 225, 234);
-
     padding-bottom: 100px;
 }
 
 
 
-.men-shoes-div>h1 {
+.shoes-div>h1 {
     margin-bottom: 50px;
     text-align: center;
 
@@ -360,13 +348,14 @@ a {
 }
 
 .shoe-component {
-
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align: center;
 }
 
 .shoe-component>button {
     width: 100%;
-    background-color: greenyellow;
+    background-color: black;
+    color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -396,14 +385,13 @@ a {
 **/
 
 .cart-page {
-    padding: 100px;
+    padding: 150px;
     min-height: 70vh;
     text-align: center;
+    background-color: rgb(238, 225, 234);
 }
 
-.cart-page>h1 {
-    margin-top: 30px;
-}
+
 
 .cart-elements-container {
     display: grid;
@@ -414,22 +402,123 @@ a {
     margin-top: 50px;
 }
 
+.cart-infos {
+    background: url(/src/assets/angebote-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   border-radius: 10px;
+   padding: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.buy-button {
+    width: 250px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
 .cart-element {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.cart-element>img {
+.cart-element > img {
     max-width: 350px;
 
 }
 
-.cart-element>button {
+.remove-btn {
     width: 350px;
     border: none;
     padding: 10px;
     background-color: rgb(255, 85, 0);
+    cursor: pointer;
+}
+
+/**
+*! About Page Styles here
+**/
+
+.about-page {
+    padding: 200px;
+    background-color: rgb(238, 225, 234);
+}
+
+.address-about-page {
+    margin-top: 50px;
+    display: flex;
+    gap: 150px;
+}
+
+.address-about-page * h2 {
+    margin-bottom: 20px;
+}
+
+
+/**
+*! Support Pages Styles here
+**/
+
+
+.support-page {
+ padding: 200px;
+}
+
+.support-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-btn {
+    padding: 5px 20px;
+    height: min-content;
+ cursor: pointer;
+   align-self: flex-end;
+background-color: inherit;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.support-btn:hover {
+    background-color: rgb(207, 230, 173);
+}
+
+.support-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 5px;
+}
+
+.support-inputs * {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: none;
+   
+}
+
+.support-form {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.support-form > textarea {
+    min-width: 300px;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

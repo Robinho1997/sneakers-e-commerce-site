@@ -5,7 +5,7 @@ function CreateCartElements(props) {
         <div className="cart-element">
             <img src={props.img} />
             <p>{props.name} - {props.price} €</p>
-            <button onClick={props.handleClick}>Remove</button>
+            <button className="remove-btn" onClick={props.handleClick}>Remove</button>
         </div>
     )
 }

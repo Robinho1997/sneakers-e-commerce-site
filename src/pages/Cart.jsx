@@ -1,10 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Context";
 import CreateCartElements from "../components/CartElements";
 import { nanoid } from 'nanoid'
 
 function Cart() {
-    const { cartItems, removeFromCart } = useContext(Context)
+    const { cartItems, removeFromCart, setCartItems } = useContext(Context)
+    const [buttonText,setButtonText] = useState("Kauf abschließen")
+    const [buttonDisabled,setButtonDisabled] = useState(false)
+
+    useEffect(()=>{
+        if (cartItems.length < 1) {
+            setButtonDisabled(true)
+        }
+    },[])
+   
 
     function calculateTotalCost() {
         let totalPrice = 0
@@ -12,6 +21,16 @@ function Cart() {
             totalPrice += sneaker.price
         })
         return totalPrice
+    }
+    
+    function buyCartContent() {
+        setButtonText("...Ordering")
+        setTimeout(() => {
+            setButtonText("Ordered")
+            setButtonDisabled(true)
+            setCartItems([])
+        }, 3000);
+        
     }
 
 
@@ -21,8 +40,11 @@ function Cart() {
 
     return (
         <div className="cart-page">
+            <div className="cart-infos">
             <h1>Warenkorb ({cartItems.length} Artikel)</h1>
             <h2>Gesamtsumme: {calculateTotalCost()} €</h2>
+            <button className="buy-button" disabled={buttonDisabled} onClick={buyCartContent}>{buttonText}</button>
+            </div>
             <div className="cart-elements-container">
                 {cartElements}
             </div>
