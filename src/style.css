@@ -202,10 +202,16 @@ a {
     color: red;
     text-decoration: line-through;
     margin-right: 10px;
+   font-size: small;
 }
 
 .discount-price {
     color: green;
+    font-size: larger;
+}
+
+.price {
+    font-size: large;
 }
 
 /**
@@ -350,6 +356,7 @@ a {
     padding-top: 150px;
     background-color: rgb(238, 225, 234);
     padding-bottom: 100px;
+
 }
 
 
@@ -360,11 +367,28 @@ a {
 
 }
 
+.shoes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width:1300px) {
+    .shoes-grid {
+        grid-template-columns: repeat(auto-fill, 300px);
+        gap: 50px;
+
+    }
+}
+
 .shoe-img {
     max-width: 300px;
     margin-bottom: 20px;
-
 }
+
+
 
 .shoe-component {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -372,20 +396,32 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 5px;
+  
+}
+
+.shoe-component a {
+    color: black;
+    font-size: large;
+    cursor: pointer;
 }
 
 
-
-.shoe-component>button {
-    width: 100%;
+.shoe-component > button {
     background-color: black;
     color: white;
     border: none;
-    padding: 10px;
-    cursor: pointer;
     margin-top: 10px;
-    max-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
 }
+
+.shoe-component > button:hover {
+    background-color: green;
+}
+
 
 
 .slick-prev,
@@ -394,38 +430,19 @@ a {
     z-index: 1;
 }
 
-/* Change the color of the navigation arrows to black */
+
 .slick-prev::before,
 .slick-next::before {
   color: black !important;
 }
 
-/* Change the position of the dots */
+
 .slick-dots {
-    top: 85%;
+    top: 93.5%;
     left: 50%;
     transform: translateX(-50%);
+    
   }
-  
-
-
-.shoes-grid {
-
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 50px;
-    justify-content: center;
-    align-content: center;
-}
-
-@media (max-width:1100px) {
-    .shoes-grid {
-        grid-template-columns: repeat(auto-fill, 300px);
-        gap: 50px;
-
-    }
-}
-
 /**
 *! Cart Page Styles here
 **/
