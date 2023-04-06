@@ -34,6 +34,7 @@ a {
     position: fixed;
     width: 100%;
     border-bottom: 1px solid white;
+    z-index: 1;
 }
 
 
@@ -351,6 +352,25 @@ a {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align: center;
 }
+.slick-prev,
+.slick-next {
+    margin: 0 30px;
+    z-index: 1;
+}
+
+/* Change the color of the navigation arrows to black */
+.slick-prev::before,
+.slick-next::before {
+  color: black !important;
+}
+
+/* Change the position of the dots */
+.slick-dots {
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
 
 .shoe-component>button {
     width: 100%;
