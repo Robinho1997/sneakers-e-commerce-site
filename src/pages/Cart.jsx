@@ -34,8 +34,8 @@ function Cart() {
     }
 
 
-    const cartElements = cartItems.map(sneaker => {
-        return <CreateCartElements key={nanoid()} name={sneaker.name} price={sneaker.price} img={sneaker.img} handleClick={() => removeFromCart(sneaker.id)} />
+    const cartElements = cartItems.map((sneaker, index) => {
+        return <CreateCartElements key={nanoid()} name={sneaker.name} price={sneaker.price} img={sneaker.img} removeFromCart={() => removeFromCart(index)}/>
     })
 
     return (

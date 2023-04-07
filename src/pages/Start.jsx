@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import backgroundImages from "../data/backgroundImages";
-
+import sneakerData from "../data/sneakerData";
 
 function Start() {
     const [imageIndex, setImageIndex] = useState(0)
     // change backgroundimage every 0.2 second
+    const discountedSneaker = sneakerData.filter(sneaker => sneaker.discount)
+    
     useEffect(() => {
         const interval = setInterval(() => {
-            setImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length)
+            setImageIndex(prevIndex => (prevIndex + 1) % discountedSneaker.length)
         }, 200);
         return () => clearInterval(interval)
     }, [])
 
     const styles = {
-        backgroundImage: "url(" + backgroundImages[imageIndex] + ")",
+        backgroundImage: "url(" + discountedSneaker[imageIndex].img + ")",
         backgroundPosition: 'center',
         backgroundSize: "900px",
         backgroundRepeat: 'no-repeat',
@@ -37,15 +38,15 @@ function Start() {
                 </div>
            </div>
 
-            <div className="startpage-sales-div">
+            
                 <div style={styles}
                     className="changing-background-container">
                     <div className="sales-notice-card">
-                        <h1>Spare 40%-60%</h1>
+                        <h1>Spare 40% - 60% </h1>
                         <Link to="/angebote">ANGEBOTE</Link>
                     </div>
                 </div>
-            </div>
+           
 
            
         </div>

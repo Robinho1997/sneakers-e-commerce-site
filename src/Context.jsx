@@ -10,8 +10,12 @@ function ContextProvider({ children }) {
     }
 
 
-    function removeFromCart(id) {
-        setCartItems(prevItems => prevItems.filter(item => item.id !== id))
+    function removeFromCart(index) {
+        setCartItems(prevItems => {
+            const newCartItems = [...prevItems]
+            newCartItems.splice(index,1)
+            return newCartItems
+        })
     }
 
     return (

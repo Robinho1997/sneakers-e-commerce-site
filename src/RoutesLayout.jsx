@@ -11,12 +11,14 @@ import Layout from "./Layout"
 import Cookies from "./pages/Cookies"
 import Impressum from "./pages/Impressum"
 import Datenschutz from "./pages/Datenschutz"
+import ShoePage from "./pages/ShoePage"
 
 function RoutesLayout() {
 
     return (
         <Layout>
             <Routes>
+                <Route path="/:name" element={<ShoePage/>}></Route>
                 <Route path='/' element={<Start />} />
                 <Route path='/herren' element={<MenShop />} />
                 <Route path='/damen' element={<WomenShop />} />

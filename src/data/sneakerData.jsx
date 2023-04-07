@@ -11,6 +11,7 @@ const sneakerData = [
         oldPrice: 120,
         id: nanoid(),
         gender: "male",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/WvLS1Gf/AIR-MAX-270-1.webp",
@@ -23,6 +24,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "male",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/yNbmF3d/BLAZER-77-VNTG-1.webp",
@@ -34,6 +36,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "male",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/ZmLPvsP/BLAZER-MID-77-VNTG-1.webp",
@@ -45,6 +48,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "male",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/xsc4njk/DUNK-1.webp",
@@ -56,6 +60,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "male",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/TgbKVSd/AIR-PEGASUS-83-1.webp",
@@ -67,6 +72,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "male",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/CBMY4Ly/AIR-JORDAN-1-1.webp",
@@ -79,6 +85,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "female",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/840m0KP/AIR-JORDAN-1-MID-1.webp",
@@ -90,6 +97,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "female",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/dbWdFBB/CARINA-STREET-1.webp",
@@ -101,6 +109,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "female",
+        brand: "Puma"
     },
     {
         img: "https://i.ibb.co/JRMYj4k/FORUM-BONEGA-1.webp",
@@ -113,6 +122,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "female",
+        brand: "Adidas"
     },
     {
         img: "https://i.ibb.co/47jL5VV/INTERNATIONALIST-1.webp",
@@ -124,6 +134,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "female",
+        brand: "Nike"
     },
     {
         img: "https://i.ibb.co/CWKVzKr/W-AF1-SHADOW-1.webp",
@@ -135,6 +146,7 @@ const sneakerData = [
         id: nanoid(),
         quantity: 1,
         gender: "female",
+        brand: "Nike"
     },
 
 ]

@@ -5,9 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Button } from "@mui/material";
-// Component erstellen für die schuh info seite
-// jeder shoe compoennt soll eine eigene page haben
-// also jeder shoe braucht eine eigene route
 
 
 function Shoe(props) {
@@ -34,7 +31,7 @@ function Shoe(props) {
                     <img className="shoe-img" src={props.images[2]} />
                 </div>
             </Slider>
-            <Link>{props.name}</Link>
+            <Link to={`/${props.name}`}>{props.name}</Link>
 
             {props.oldPrice ?
                 <p>
@@ -44,7 +41,7 @@ function Shoe(props) {
                 : <p className="price">{props.price} €</p>}
 
             <Button variant="text" onClick={() => addToCart(props.fullObj)}>
-                <i class="ri-shopping-cart-2-fill" /><p>In den Warenkorb</p> 
+                <i className="ri-shopping-cart-2-fill" /><p>In den Warenkorb</p>
             </Button>
 
         </div>

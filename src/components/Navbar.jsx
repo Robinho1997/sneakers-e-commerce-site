@@ -14,6 +14,7 @@ function Navbar() {
     }
     return (
         <nav className="navbar">
+    
             <h1 >Stay Awesome</h1>
             <div className="navbar-middle-elements">
                 <Link to='/'>Start</Link>
