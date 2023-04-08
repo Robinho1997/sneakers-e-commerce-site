@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../Context";
+import "../assets/styles/navbar.css"
 
 function Navbar() {
     const { cartItems } = useContext(Context)
@@ -23,7 +24,7 @@ function Navbar() {
 
     return (
         <nav className="navbar">
-            <h1 >Stay Awesome</h1>
+            <Link to='/'>Stay Awesome</Link>
             <div className={active}>
                 <Link to='/'>Start</Link>
                 <p onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >Shop</p>

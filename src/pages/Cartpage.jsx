@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../Context";
 import CreateCartElements from "../components/CartElements";
 import { nanoid } from 'nanoid'
-
+import "../assets/styles/cart.css"
 function Cart() {
     const { cartItems, removeFromCart, setCartItems } = useContext(Context)
     const [buttonText,setButtonText] = useState("Kauf abschließen")

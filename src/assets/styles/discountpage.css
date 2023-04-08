@@ -1,0 +1,23 @@
+/**
+*! Discount Page Styles here
+**/
+
+.discount-page {
+    padding-top: 200px;
+}
+
+.old-price {
+    color: red;
+    text-decoration: line-through;
+    margin-right: 10px;
+    font-size: small;
+}
+
+.discount-price {
+    color: green;
+    font-size: larger;
+}
+
+.price {
+    font-size: large;
+}

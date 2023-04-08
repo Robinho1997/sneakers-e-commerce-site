@@ -1,0 +1,79 @@
+/**
+*! Footer styles here
+**/
+
+.footer {
+    border-top: 3px solid white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer * h2 {
+    font-size: 25px;
+}
+
+.footer * input {
+    font-size: 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.footer-second-line {
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input-email {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.newsletter-footer>h2 {
+    margin-bottom: 10px;
+}
+
+.adress-footer>h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-btn {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-links * {
+    color: white;
+}
+
+
+@media (max-width:1000px) {
+    .footer {
+        font-size: 10px;
+    }
+
+    .adress-footer {
+        display: none;
+    }
+
+    .newsletter-footer {
+        display: none;
+    }
+}

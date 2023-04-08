@@ -1,0 +1,77 @@
+/**
+*! Product Page Styles here
+**/
+
+.shoe-page {
+    display: flex;
+    padding-top: 155px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.shoe-page-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shoe-page-btn {
+    background-color: black !important;
+    color: white !important;
+    display: flex;
+    gap: 10px;
+}
+
+.rating-stars {
+    color: black !important;
+}
+
+.small {
+    font-size: small;
+    color: grey;
+}
+
+.big {
+    font-size: larger;
+}
+
+.shoe-page-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.small-images:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.delivery-infos {
+    border: 1px solid;
+}
+
+.delivery-infos>div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.shoe-page-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

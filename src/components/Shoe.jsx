@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import { Button } from "@mui/material";
-
+import "../assets/styles/shoeComponent.css"
 
 function Shoe(props) {
     const { addToCart } = useContext(Context)
@@ -32,18 +32,15 @@ function Shoe(props) {
                 </div>
             </Slider>
             <Link to={`/${props.name}`}>{props.name}</Link>
-
             {props.oldPrice ?
                 <p>
                     <span className="old-price">{props.oldPrice} €</span>
                     <span className="discount-price">{props.price} €</span>
                 </p>
                 : <p className="price">{props.price} €</p>}
-
             <Button variant="text" onClick={() => addToCart(props.fullObj)}>
                 <i className="ri-shopping-cart-2-fill" /><p>In den Warenkorb</p>
             </Button>
-
         </div>
     )
 }

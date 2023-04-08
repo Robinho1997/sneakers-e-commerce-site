@@ -1,11 +1,9 @@
 import React from "react";
+import "../assets/styles/supportpage.css"
 
 function Support() {
-
     return (
-       
         <div className="support-page">
-          
             <div className="support-text">
                 <h2>Kontaktieren</h2>
                 <p>Noch Fragen?</p>
@@ -20,9 +18,7 @@ function Support() {
                 <textarea placeholder="Nachricht schreiben..." />
                 <button className="support-btn">Absenden</button>
             </form>
-            
         </div>
-
     )
 }
 

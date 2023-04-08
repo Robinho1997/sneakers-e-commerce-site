@@ -1,0 +1,54 @@
+/**
+*! Support Pages Styles here
+**/
+
+.support-page {
+    padding: 200px;
+}
+
+.support-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.support-btn {
+    padding: 5px 20px;
+    height: min-content;
+    cursor: pointer;
+    align-self: flex-end;
+    background-color: inherit;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.support-btn:hover {
+    background-color: rgb(207, 230, 173);
+}
+
+.support-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 5px;
+}
+
+.support-inputs * {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: none;
+}
+
+.support-form {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.support-form>textarea {
+    min-width: 300px;
+    padding: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

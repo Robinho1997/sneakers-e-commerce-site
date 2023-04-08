@@ -1,17 +1,17 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
-import Start from './pages/Start'
+import HomePage from './pages/Homepage'
 import MenShop from './pages/MenShop'
 import WomenShop from './pages/WomenShop'
 import About from './pages/About'
 import Support from './pages/Support'
-import Cart from './pages/Cart'
-import Discount from "./pages/Discount"
+import Cart from './pages/Cartpage'
+import Discount from "./pages/Discountpage"
 import Layout from "./Layout"
 import Cookies from "./pages/Cookies"
 import Impressum from "./pages/Impressum"
 import Datenschutz from "./pages/Datenschutz"
-import ShoePage from "./pages/ShoePage"
+import ShoePage from "./pages/Productpage"
 
 function RoutesLayout() {
 
@@ -19,7 +19,7 @@ function RoutesLayout() {
         <Layout>
             <Routes>
                 <Route path="/:name" element={<ShoePage/>}></Route>
-                <Route path='/' element={<Start />} />
+                <Route path='/' element={<HomePage />} />
                 <Route path='/herren' element={<MenShop />} />
                 <Route path='/damen' element={<WomenShop />} />
                 <Route path='/über' element={<About />} />

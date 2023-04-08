@@ -1,0 +1,83 @@
+/**
+*! Shoe Styles here
+**/
+
+.shoes-div {
+    padding-top: 150px;
+    background-color: rgb(238, 225, 234);
+    padding-bottom: 100px;
+}
+
+.shoes-div>h1 {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.shoes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width:1300px) {
+    .shoes-grid {
+        grid-template-columns: repeat(auto-fill, 250px);
+        gap: 50px;
+    }
+}
+
+.shoe-img {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.shoe-component {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.shoe-component a {
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.shoe-component>button {
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shoe-component>button:hover {
+    background-color: green;
+}
+
+.slick-prev,
+.slick-next {
+    margin: 0 30px;
+    z-index: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: black !important;
+}
+
+.slick-dots {
+    top: 93.5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
