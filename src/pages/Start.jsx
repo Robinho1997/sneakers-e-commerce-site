@@ -17,7 +17,7 @@ function Start() {
     const styles = {
         backgroundImage: "url(" + discountedSneaker[imageIndex].img + ")",
         backgroundPosition: 'center',
-        backgroundSize: "900px",
+     
         backgroundRepeat: 'no-repeat',
     }
         

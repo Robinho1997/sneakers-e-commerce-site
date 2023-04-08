@@ -25,31 +25,48 @@ a {
 **/
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px;
-    background-color: black;
-    color: whitesmoke;
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid white;
-    z-index: 1;
-    flex-wrap: wrap;
-}
-
-
-.navbar-middle-elements {
     display: flex;
-    gap: 50px;
-    position: relative;
-    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 10px;
+    background: black;
+    color: white;
+    z-index: 1;
 }
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+    position: relative;
+}
+
+.nav-menu a {
+    color: white
+}
+
+.nav-toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: silver;
+    transition: 0.4s ease-in;
+  
+}
+
+.nav-toggler {
+    cursor: pointer;
+    display: none;
+}
+
 
 .gender-navbar-box {
   position: absolute;
-  top: 100%;
-  left: 20%;
+  top: 85%;
+  right:  68.5%;
   z-index: 1;
   background-color: black;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -59,25 +76,13 @@ a {
 
 .gender-navbar-box a{
     display: block;
-    margin-bottom: 5px;
-   
-}
-
-
-
-.navbar a {
-    color: whitesmoke;
-}
-
-.navbar * p {
-    color: white;
+    margin-bottom: 5px; 
 }
 
 
 .bag-icon {
     color: wheat;
     font-size: 25px;
-
 }
 
 .cart-navbar {
@@ -85,6 +90,47 @@ a {
     gap: 5px;
 }
 
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        justify-content: space-between;
+        padding-inline: 20px;
+    }
+
+    .nav-toggler {
+        display: block; 
+        z-index: 1;
+    }
+
+    .nav-menu {
+        font-size: small;
+        position: fixed;
+        top: 0vh;
+        right: 0;
+        padding-inline: 10px ;
+        height: 100vh;
+        background-color: black;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in; 
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+    
+    .gender-navbar-box {
+      position: absolute;
+      top: 30%;
+      right:  15.5%;
+      z-index: 2;
+      background-color: black;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+}
 
 
 /**
@@ -134,6 +180,19 @@ a {
     text-align: center;
 }
 
+@media only screen and (max-width:850px) {
+    .cloud-text {
+        font-size: 50px;
+    }
+    
+.startpage-welcome-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+    padding-top: 50px;
+}
+}
+
 
 @keyframes clouds-moving {
     0% {
@@ -156,13 +215,20 @@ a {
 
 
 .changing-background-container {
-   
     height: 70vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
+  
+}
+
+@media (max-width:600px) {
+    .changing-background-container {
+        height: 50vh;
+        background-size: cover;
+    }
 }
 
 .sales-notice-card {
@@ -217,7 +283,12 @@ a {
     display: flex;
     text-align: center;
     border-block: 3px solid white;
-  
+}
+
+@media (max-width:800px) {
+    .startpage-gender-shop-selection-div {
+        flex-wrap: wrap;
+    }
 }
 
 .startpage-gender-shop-selection-div * {
@@ -255,6 +326,20 @@ a {
     background-color: black;
     color: white;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1000px) {
+    .footer {
+        font-size: 10px;
+    }
+
+    .adress-footer {
+        display: none;
+    }
+    .newsletter-footer {
+        display: none;
+    }
 }
 
 
@@ -363,7 +448,7 @@ a {
 
 .shoes-grid {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 250px);
     gap: 50px;
     justify-content: center;
     align-content: center;
@@ -371,14 +456,14 @@ a {
 
 @media (max-width:1300px) {
     .shoes-grid {
-        grid-template-columns: repeat(auto-fill, 300px);
+        grid-template-columns: repeat(auto-fill, 250px);
         gap: 50px;
 
     }
 }
 
 .shoe-img {
-    max-width: 300px;
+    max-width: 250px;
     margin-bottom: 20px;
 }
 

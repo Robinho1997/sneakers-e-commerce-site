@@ -52,7 +52,7 @@ function ShoePage() {
                     </div>
                     <hr/>
                     <div>
-                    <i class="ri-arrow-go-back-line"></i>
+                    <i className="ri-arrow-go-back-line"></i>
                         <p>100 Tage Rückgaberecht</p>
                     </div>
                 </div>
