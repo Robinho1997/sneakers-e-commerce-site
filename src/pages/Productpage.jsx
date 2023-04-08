@@ -5,7 +5,7 @@ import { Rating, Button, Tab } from "@mui/material";
 import { Context } from "../Context";
 import "../assets/styles/productpage.css"
 
-function ShoePage() {
+function Productpage() {
     const { name } = useParams()
     const { addToCart } = useContext(Context)
     let sneaker = sneakerData.filter(sneaker => sneaker.name === name)
@@ -17,8 +17,8 @@ function ShoePage() {
     }
 
     return (
-        <div className="shoe-page">
-            <div className="shoe-page-images">
+        <div className="product-page">
+            <div className="product-page-images">
                 <div className="small-images">
                     <img width={"100px"} src={sneaker.img} onMouseEnter={() => changeImg(sneaker.img)} />
                     <img width={"100px"} src={sneaker.img2} onMouseEnter={() => changeImg(sneaker.img2)} />
@@ -26,13 +26,13 @@ function ShoePage() {
                 </div>
                 <img className="big-img" src={mainImg} width={"315px"} />
             </div>
-            <div className="shoe-page-right-side">
-                <div className="shoe-page-infos">
+            <div className="product-page-right-side">
+                <div className="product-page-infos">
                     <h2>{sneaker.brand}</h2>
                     <h1>{sneaker.name}</h1>
                     <p className="big">{sneaker.price} € <span className="small"> inkl. MwSt.</span></p>
                     <Rating className="rating-stars" defaultValue={4.5} precision={0.5} color="black" />
-                    <Button className="shoe-page-btn" variant="text" onClick={() => addToCart(sneaker)}>
+                    <Button className="product-page-btn" variant="text" onClick={() => addToCart(sneaker)}>
                         <i className="ri-shopping-cart-2-fill" /><p>In den Warenkorb</p>
                     </Button>
                 </div>
@@ -60,4 +60,4 @@ function ShoePage() {
     )
 }
 
-export default ShoePage
+export default Productpage

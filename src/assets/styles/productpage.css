@@ -2,7 +2,7 @@
 *! Product Page Styles here
 **/
 
-.shoe-page {
+.product-page {
     display: flex;
     padding-top: 155px;
     justify-content: center;
@@ -10,13 +10,13 @@
     gap: 100px;
 }
 
-.shoe-page-infos {
+.product-page-infos {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.shoe-page-btn {
+.product-page-btn {
     background-color: black !important;
     color: white !important;
     display: flex;
@@ -36,7 +36,7 @@
     font-size: larger;
 }
 
-.shoe-page-images {
+.product-page-images {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +65,7 @@
     justify-content: center;
 }
 
-.shoe-page-right-side {
+.product-page-right-side {
     display: flex;
     flex-direction: column;
     gap: 20px;
