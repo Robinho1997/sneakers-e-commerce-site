@@ -20,11 +20,11 @@ function Productpage() {
         <div className="product-page">
             <div className="product-page-images">
                 <div className="small-images">
-                    <img width={"100px"} src={sneaker.img} onMouseEnter={() => changeImg(sneaker.img)} />
-                    <img width={"100px"} src={sneaker.img2} onMouseEnter={() => changeImg(sneaker.img2)} />
-                    <img width={"100px"} src={sneaker.img3} onMouseEnter={() => changeImg(sneaker.img3)} />
+                    <img src={sneaker.img} onMouseEnter={() => changeImg(sneaker.img)} />
+                    <img src={sneaker.img2} onMouseEnter={() => changeImg(sneaker.img2)} />
+                    <img src={sneaker.img3} onMouseEnter={() => changeImg(sneaker.img3)} />
                 </div>
-                <img className="big-img" src={mainImg} width={"315px"} />
+                <img className="big-img" src={mainImg}/>
             </div>
             <div className="product-page-right-side">
                 <div className="product-page-infos">

@@ -41,8 +41,10 @@ a {
 
 .impressum {
     padding: 160px 150px;
-    text-align: center;
-    background-color: rgb(238, 225, 234);
+}
+
+.impressum h1 {
+    margin-bottom: 20px;
 }
 
 

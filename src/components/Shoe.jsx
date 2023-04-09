@@ -22,13 +22,19 @@ function Shoe(props) {
         <div className="shoe-component">
             <Slider {...settings}>
                 <div>
-                    <img className="shoe-img" src={props.images[0]} />
+                    <Link to={`/${props.name}`}>
+                        <img className="shoe-img" src={props.images[0]} />
+                    </Link>
                 </div>
                 <div>
-                    <img className="shoe-img" src={props.images[1]} />
+                    <Link to={`/${props.name}`}>
+                        <img className="shoe-img" src={props.images[1]} />
+                    </Link>
                 </div>
                 <div>
-                    <img className="shoe-img" src={props.images[2]} />
+                    <Link to={`/${props.name}`}>
+                        <img className="shoe-img" src={props.images[2]} />
+                    </Link>
                 </div>
             </Slider>
             <Link to={`/${props.name}`}>{props.name}</Link>

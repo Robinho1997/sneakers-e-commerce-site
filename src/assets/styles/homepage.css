@@ -77,40 +77,6 @@
 }
 
 
-.changing-background-container {
-    height: 70vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-}
-
-@media (max-width:600px) {
-    .changing-background-container {
-        height: 50vh;
-        background-size: cover;
-    }
-}
-
-.sales-notice-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: black;
-    margin-bottom: 50px;
-}
-
-.sales-notice-card>a {
-    color: white;
-    background-color: black;
-    padding: 0px 30px;
-    font-size: 30px;
-    border-radius: 5px;
-}
-
 .homepage-gender-shop-selection-div {
     height: 60vh;
     display: flex;
@@ -147,4 +113,40 @@
     url(/src/assets/images/women-beach.jpg);
     background-size: cover;
     background-position: bottom;
+}
+
+
+.changing-background-container {
+    height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: black;
+}
+
+@media (max-width:600px) {
+    .changing-background-container {
+        height: 50vh;
+        background-size: cover;
+    }
+}
+
+.sales-notice-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.sales-notice-card>a {
+    color: white;
+    background-color: black;
+    padding: 0px 30px;
+    font-size: 30px;
+    border-radius: 5px;
 }

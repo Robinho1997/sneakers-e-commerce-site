@@ -15,8 +15,10 @@ function HomePage() {
         return () => clearInterval(interval)
     }, [])
 
+    ;
+
     const styles = {
-        backgroundImage: "url(" + discountedSneaker[imageIndex].img + ")",
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(209, 202, 207, 0.73)),url(${discountedSneaker[imageIndex].img})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
     }
