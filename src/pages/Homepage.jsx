@@ -24,8 +24,8 @@ function HomePage() {
     return (
         <div>
             <div className="homepage-welcome-div">
-                <h1 className="cloud-text cloud-title">Awesome</h1>
-                <h1 className="cloud-text cloud-title">Sneakers</h1>
+                <h1 className="cloud-text cloud-title">Awesome Sneakers</h1>
+              
                 <Link to="/herren">SHOP NOW</Link>
             </div>
 

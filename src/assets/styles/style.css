@@ -66,14 +66,51 @@ a {
 .about-page {
     padding: 200px;
     background-color: rgb(238, 225, 234);
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .address-about-page {
     margin-top: 50px;
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    gap: 20px;
 }
 
 .address-about-page * h2 {
     margin-bottom: 20px;
+}
+
+.about-img {
+    width: 500px;
+}
+
+
+@media (max-width:800px) {
+    .cookies, .impressum, .datenschutz, .about-page {
+        padding-top: 120px;
+        padding-inline: 20px;
+    }
+
+    .impressum {
+        text-align: start;
+    }
+
+    .impressum h1 {
+       margin-bottom: 20px;
+    }
+    
+    .address-about-page {
+        gap: 50px;
+        justify-content: center;
+    
+    }
+
+    .about-img {
+        width: 90%;
+    }
 }

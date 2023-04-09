@@ -20,13 +20,13 @@ function About() {
                     <p>filiale@website.com</p>
                     <p>Tel: +49 (0) 1$$456-2</p>
                 </div>
-              
                 <div>
                     <h2>Öffnungszeiten</h2>
                     <p>Montag - Freitag: 11.00 - 18.30</p>
                     <p>Samstag: 11.00 - 17.00</p>
                     <p>Sonntag: geschlossen</p>
                 </div>
+                <img className="about-img" src="./src/assets/images/about.jpg"/>
             </div>
         </div>
     )
